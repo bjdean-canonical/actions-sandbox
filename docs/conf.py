@@ -20,10 +20,10 @@ import textwrap
 
 # Project name
 # TODO: Update with the official name of your project (e.g., "LXD documentation")
-project = "Project documentation"
+project = "Brad's github actions sandbox"
 
 # Author name; used in the default copyright statement in the page footer
-author = "Canonical Ltd."
+author = "Bradley Dean <bradley.dean@canonical.com>"
 
 # The year in the copyright statement
 copyright = f"{datetime.date.today().year}"
@@ -56,7 +56,7 @@ html_context = {
     "discourse": "",
     "mattermost": "",
     "matrix": "",
-    "github_url": "",
+    "github_url": "https://github.com/bjdean-canonical/actions-sandbox/",
     # Feedback and edit/view links require a valid `github_url`.
     # TODO: Set to False to hide feedback and page controls.
     "feedback": True,
@@ -72,9 +72,9 @@ html_context = {
         # TODO: Specify your project's license.
         # For the name, we recommend using the standard shorthand identifier from
         # https://spdx.org/licenses
-        "name": "",
+        "name": "GPLv3",
         # TODO: Link directly to your project's license statement.
-        "url": "",
+        "url": "https://github.com/bjdean-canonical/actions-sandbox/blob/main/LICENSE",
     },
 }
 
