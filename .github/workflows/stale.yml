@@ -23,11 +23,16 @@ jobs:
           stale-pr-label: stale
           remove-pr-stale-when-updated: true
           # Customize this comment; add @USERNAME or @ORGANIZATION/TEAM-SLUG
-          # mentions in its text to notify specific recipients.
+          # mentions in its text to notify specific recipients, for example:
+          #   Please review this PR, @your-org/your-team.
           stale-pr-message: |
             This pull request has had no activity for 30 days. Please review it
             and provide an update when you can. It will not be closed automatically.
-          # No built-in participant discovery or age-based escalation is available.
+          # Example manual escalation table (not executed by the action):
+          # PR idle for 30 days: review team     @your-org/your-team
+          # PR idle for 60 days: team lead       @your-org/your-leads
+          # PR idle for 90 days: manager         @your-manager
+          # Replace these examples; timed escalation requires separate automation.
           # Optional filters; uncomment and replace with your repository's values:
           # exempt-pr-labels: 'on-hold,blocked'
           # exempt-draft-pr: true
